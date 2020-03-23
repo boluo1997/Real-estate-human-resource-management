@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>新增订单</title>
+    <link rel="stylesheet" href="css/regist1.css"/>
+    <script type="text/javascript" src="./js/jquery-1.4.2.js"></script>
+	<script>
+	
+	function submitForm(){
+		
+		var myorderSalesmanId = 1
+		var myorderSalesmanName = $("#salesmanName").val()//业务员名字
+		var myorderConsumerName = $("#consumerName").val()//客户名字
+		var myorderConsumerPhone = $("#consumerPhone").val()//客户手机号
+		var myorderCity = $("#myorderCity").val();
+		var myorderPlotName = $("#myorderPlotName").val();
+					
+
+        	$.ajax({
+		    type: "post", // 数据提交类型
+		    url: "http://www.boluo.com/user/addOrder", // 发送地址
+		    data: {
+  					"myorderSalesmanId" : myorderSalesmanId,//业务员ID
+					"myorderSalesmanName" : myorderSalesmanName,//业务员名字
+					"myorderConsumerName" : myorderConsumerName,//客户名字
+					"myorderConsumerPhone" : myorderConsumerPhone,//客户手机号
+					"myorderCity":myorderCity,
+					"myorderPlotName":myorderPlotName
+					
+			    }, 
+			dataType : "text",
+
+		    success:function (result) {
+		        if(result.status == 200){
+			        alert("新增订单成功！"); 
+		        }else{
+			        alert("新增订单成功！");
+		        }
+		    }
+			});
+    }
+	
+</script>
+    
+    <meta charset="UTF-8">
+</head>
+<body>
+<form >
+    <h1>请输入您要新增的订单信息</h1>
+    <table>
+        <tr>
+            <td colspan="2"><font color="red">
+
+            </font></td>
+        </tr>
+        <tr>
+            <td class="tds">业务员姓名：</td>
+            <td>
+                <input id="salesmanName" type="text" name="myorderSalesmanName" width=20px;/>
+                <span style="color: red" id="username_msg"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="tds">客户姓名：</td>
+            <td>
+                <input id="consumerName" type="text" name="myorderConsumerName" width=20px;/>
+                <span style="color: red" id="password_msg"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="tds">客户手机号：</td>
+            <td>
+                <input id="consumerPhone" type="text" name="myorderConsumerPhone" width=20px;/>
+                <span style="color: red" id="password2_msg"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="tds">住房所在城市：</td>
+            <td>
+                <input id="myorderCity" type="text" name="myorderConsumerPhone" width=20px;/>
+                <span style="color: red" id="password2_msg"></span>
+            </td>
+        </tr>
+        <tr>
+            <td class="tds">小区名称：</td>
+            <td>
+                <input id="myorderPlotName" type="text" name="myorderConsumerPhone" width=20px;/>
+                <span style="color: red" id="password2_msg"></span>
+            </td>
+        </tr>
+		
+        <tr>
+            <td class="sub_td" colspan="2" class="tds">
+                <input type="button" value="提交" onclick="submitForm()"/>
+            </td>
+            <td><a href="">重置</td>
+        </tr>
+    </table>
+</form>
+
+
+
+</body>
+</html>

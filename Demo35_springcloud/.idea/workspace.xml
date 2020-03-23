@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1d5882ff-80c6-4d66-88c5-f7110907f81f" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-eureka-server01/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-eureka-client01/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-eureka-server02/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-ribbon-client/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-eureka-client02/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-eureka-server03/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-eureka-server04/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-zuul-client01/target/" />
+    <ignored path="$PROJECT_DIR$/spring-cloud-order-service/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-zuul-client01/src/main/java/cn/tedu/StarterZuul01.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#417#418#0" expanded="true" />
+                <element signature="e#480#481#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-client01/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="16" selection-start-column="16" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-zuul-client01/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server01/src/main/java/cn/tedu/StarterEServer01.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#422#423#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-ribbon-client/src/main/java/cn/tedu/StarterRibbon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#591#592#0" expanded="true" />
+                <element signature="e#654#655#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server04/src/main/java/cn/tedu/StarterEServer04.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-client02/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-ribbon-client/src/main/java/cn/tedu/service/HelloService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-ribbon-client/src/main/java/cn/tedu/controller/HelloController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="13" column="27" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-cloud-ribbon-client/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="11" column="59" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-server01/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-client01/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-client01/src/main/java/cn/tedu/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-server02/src/main/java/resources/application.properties" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-server02/src/main/resource/application.properties" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-client02/src/main/java/cn/tedu/StarterClient02.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-client02/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-client02/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-ribbon-client/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-server01/src/main/java/cn/tedu/StarterEServer01.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-client01/src/main/java/cn/tedu/StarterClient01.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-server01/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-server02/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-server02/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-server02/src/main/java/cn.tedu/StarterEServer02.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-server03/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-server03/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-server03/src/main/java/cn/tedu/StarterEServer02.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-client02/src/main/java/cn/tedu/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-server04/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-server04/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-server04/src/main/java/cn/tedu/StarterEServer02.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-server04/src/main/java/cn/tedu/StarterEServer04.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-ribbon-client/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/spring-cloud-ribbon-client/src/main/java/cn/tedu/service/HelloService.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-ribbon-client/src/main/java/cn/tedu/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-zuul-client01/src/main/java/cn/tedu/StarterZuul01.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-order-service/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-client01/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/spring-cloud-ribbon-client/src/main/java/cn/tedu/StarterRibbon.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-zuul-client01/src/main/java/cn/tedu/filter/CookieUtils.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-zuul-client01/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-zuul-client01/src/main/java/cn/tedu/filter/JedisClusterConfig.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-zuul-client01/src/main/java/cn/tedu/filter/MyFilter.java" />
+        <option value="$PROJECT_DIR$/spring-cloud-zuul-client01/src/main/resources/application.properties" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../maven3.6" />
+        <option name="userSettingsFile" value="D:\soft\maven3.6\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-cloud-eureka-server01" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-cloud-eureka-server01" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="123" />
+    <option name="y" value="2" />
+    <option name="width" value="1469" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-eureka-client01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-eureka-client01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-eureka-client01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-eureka-client01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-eureka-client02" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-eureka-client02" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-eureka-client02" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-eureka-client02" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-eureka-server01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-eureka-server01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-eureka-server01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-eureka-server01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-eureka-server01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tedu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-ribbon-client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-ribbon-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-ribbon-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-ribbon-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-ribbon-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tedu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-ribbon-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tedu" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-ribbon-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tedu" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-ribbon-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-zuul-client01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-zuul-client01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-zuul-client01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-zuul-client01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-zuul-client01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tedu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Demo35_springcloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Demo35_springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-cloud-zuul-client01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../boluo-parent" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15625" />
+    <property name="project.structure.side.proportion" value="0.2662037" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.tedu.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\soft\Idea_projects\Demo35_springcloud\spring-cloud-eureka-server04\src\main\java\cn\tedu" />
+      <recent name="D:\soft\Idea_projects\Demo35_springcloud\spring-cloud-eureka-server03\src\main\java\cn\tedu" />
+      <recent name="D:\soft\Idea_projects\Demo35_springcloud\spring-cloud-eureka-server02\src\main\java\cn.tedu" />
+      <recent name="D:\soft\Idea_projects\Demo35_springcloud\spring-cloud-eureka-server02\src\main" />
+      <recent name="D:\soft\Idea_projects\Demo35_springcloud\spring-cloud-ribbon-client\src\main\java\cn\tedu" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.StarterZuul01">
+    <configuration name="StarterClient01" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springcloudeurekaclient01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.tedu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.tedu.StarterClient01" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StarterClient02" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springcloudeurekaclient02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.tedu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.tedu.StarterClient02" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StarterEServer01" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springcloudeurekaserver01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.tedu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.tedu.StarterEServer01" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StarterRibbon" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springcloudribbonclient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.tedu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.tedu.StarterRibbon" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StarterZuul01" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="spring-cloud-zuul-client01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.tedu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.tedu.StarterZuul01" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.StarterZuul01" />
+        <item itemvalue="Spring Boot.StarterEServer01" />
+        <item itemvalue="Spring Boot.StarterRibbon" />
+        <item itemvalue="Spring Boot.StarterClient02" />
+        <item itemvalue="Spring Boot.StarterClient01" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1d5882ff-80c6-4d66-88c5-f7110907f81f" name="Default Changelist" comment="" />
+      <created>1575284206094</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575284206094</updated>
+      <workItem from="1575284208737" duration="6283000" />
+      <workItem from="1575332260636" duration="4911000" />
+      <workItem from="1575441938143" duration="4883000" />
+      <workItem from="1575447413521" duration="7570000" />
+      <workItem from="1575461484665" duration="99000" />
+      <workItem from="1575461764088" duration="277000" />
+      <workItem from="1575505058746" duration="652000" />
+      <workItem from="1575543286911" duration="17000" />
+      <workItem from="1575591461822" duration="3726000" />
+      <workItem from="1575680301986" duration="8603000" />
+      <workItem from="1575853195175" duration="599000" />
+      <workItem from="1576025081719" duration="597000" />
+      <workItem from="1576115260149" duration="1627000" />
+      <workItem from="1576461838932" duration="596000" />
+      <workItem from="1576753023436" duration="5673000" />
+      <workItem from="1576914692964" duration="3449000" />
+      <workItem from="1577063593177" duration="3751000" />
+      <workItem from="1577150358840" duration="5784000" />
+      <workItem from="1577236870812" duration="2198000" />
+      <workItem from="1577323414679" duration="1601000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="62896000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="123" y="2" width="1469" height="1047" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24982257" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32109004" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934355" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32871014" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32819906" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.22538294" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.23300971" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server02/src/main/java/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-client02/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server01/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-client01/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server02/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server02/src/main/resource/application.properties" />
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server02/src/main/java/cn/tedu/StarterEServer02.java" />
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server02/src/main/java/cn/tedu/App.java" />
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server02/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server02/src/main/java/cn.tedu/StarterEServer02.java" />
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server03/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server03/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server03/src/main/java/cn/tedu/StarterEServer02.java" />
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-client02/src/main/java/cn/tedu/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server04/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-ribbon-client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server04/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-order-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-order-service/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-order-service/src/main/java/cn/tedu/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="e#114#115#0" expanded="true" />
+            <element signature="e#166#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-client01/src/main/java/cn/tedu/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#321#322#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server01/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.13.RELEASE/spring-web-4.3.13.RELEASE-sources.jar!/org/springframework/web/client/RestTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="121" column="13" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-zuul-client01/src/main/java/cn/tedu/filter/CookieUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5112">
+          <caret line="221" selection-start-line="221" selection-end-line="221" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-zuul-client01/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-zuul-client01/src/main/java/cn/tedu/filter/JedisClusterConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-zuul-client01/src/main/java/cn/tedu/filter/MyFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-client02/src/main/java/cn/tedu/StarterClient02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-client01/src/main/java/cn/tedu/StarterClient01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-client01/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-client02/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server01/src/main/java/cn/tedu/StarterEServer01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-eureka-server04/src/main/java/cn/tedu/StarterEServer04.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-ribbon-client/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="59" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-ribbon-client/src/main/java/cn/tedu/StarterRibbon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-ribbon-client/src/main/java/cn/tedu/service/HelloService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-zuul-client01/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-ribbon-client/src/main/java/cn/tedu/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-cloud-zuul-client01/src/main/java/cn/tedu/StarterZuul01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>spring-cloud-order-service</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2662037" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="-U idea:idea" />
+  </component>
+</project>

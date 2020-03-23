@@ -1,0 +1,10 @@
+create table myorder(
+	myorder_id varchar(20) auto_increment primary key,
+	myorder_salesman_id varchar(20) not null comment '业务员ID',
+	myorder_salesman_name varchar(20) comment '业务员名字',	
+	myorder_consumer_name varchar(20) comment '客户名字',
+	myorder_consumer_phone varchar(15) comment '客户手机号',
+	myorder_city varchar(50) comment '所在城市',
+	myorder_plot_name varchar(50) comment '小区名称',
+	myorder_create_time datetime not null comment '订单创建时间'	
+)

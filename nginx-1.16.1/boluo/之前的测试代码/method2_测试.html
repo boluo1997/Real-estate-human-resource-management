@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   	
+    <title>添加订单</title>
+	<script type="text/javascript" src="./js/jquery-1.4.2.js"></script>
+</head>
+
+<body>
+	<table>
+		 
+		<tr>
+			<td>客户姓名:</td>
+			<td><input id="consumerName" type="text" name="tx3" width=20px;/></td>
+		</tr>
+		<tr>
+			<td>客户手机号:</td>
+			<td><input id="consumerPhone" type="text" name="tx4" width=20px;/></td>
+		</tr>
+		<tr>
+			<input type="button" onClick="submitInfo()" value="提交" />
+			<td><input value="返回"></td>
+		</tr>
+	</table>
+
+<script>
+
+	function submitInfo(){ 
+		var userName = document.getElementById("consumerName").value;
+		var phone = $("#consumerPhone").val();
+
+		if(userName.length == 0){
+			alert("请输入用户名")
+			return
+		}
+
+
+
+		$.ajax({
+		    type: "GET", // 数据提交类型
+		    url: "http://www.boluo.com/user/test", // 发送地址
+		    data: {
+					"name" : userName,
+			    }, 
+			    dataType : "text",
+//contentType: false, //
+//		    async: true, // 是否异步
+//		    processData: false, //processData 默认为false，当设置为true的时候,jquery ajax 提交的时候不会序列化 data，而是直接使用data
+		    success:function (data) {
+		        if(data.status==1){ 
+		        }else if(status == 1){
+			        
+		        }
+		    }
+			});
+
+    			    //JSON.stringify(requestData), //发送数据
+		    //async: true, // 是否异步
+		    //processData: false, //processData 默认为false，当设置为true的时候,jquery ajax 提交的时候不会序列化 data，而是直接使用data
+		    //contentType: false, //
+
+  
+		
+	}
+</script>
+ 
+</body>

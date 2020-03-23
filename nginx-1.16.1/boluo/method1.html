@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   	
+    <title>查看个人信息</title>
+	
+</head>
+<script type="text/javascript" src="./js/jquery-1.4.2.js"></script>
+<script>
+	window.onload=function(){
+		
+		var uid = 5;
+		
+		$.ajax({
+               url:"http://www.boluo.com/user/check/checkUser?salesmanId="+uid,
+               dataType:"json",
+               type:"POST",
+               success:function (result) {
+                    console.log(result);
+                    
+                    var html="";
+                    html += "<tr>"+
+                    "<td>"+result.salesmanName+"</td>"+
+					"<td>"+result.salesmanId+"</td>"+
+					"<td>"+result.salesmanEmail+"</td>"+
+					"<td>"+result.salesmanPhone+"</td>"+
+					"<td>"+result.salesmanCreateTime+"</td>"+
+                    "</tr>"
+                	
+                    $("#content").html(html);
+               } 
+
+            });
+	}
+</script>
+<body>
+	<table>
+		<tr>
+			<td>姓名</td>
+			<td>ID</td>
+			<td>邮箱</td>
+			<td>手机号</td>
+			<td>入职时间</td>
+			
+		</tr>
+		
+
+		<tbody id="content">
+			
+		</tbody>
+	</table>
+
+	
+</body>

@@ -1,0 +1,31 @@
+create table salesman(
+	salesman_id int auto_increment primary key,	
+	salesman_name varchar(20),
+	salesman_password char(32),
+	salesman_email varchar(50),
+	salesman_phone varchar(15),
+	salesman_status varchar(5) default 1,
+	salesman_image varchar(500) default null,	
+	salesman_create_time datetime comment '创建时间',
+	salesman_update_time datetime comment '修改时间'
+)
+
+insert into salesman
+values(001,'boluochuixue','boluochuixue','boluo@gmail.com','88488848','1','http://image.jt.com/upload/5/0/6/f/4/4/b/f/40ca42aa-8298-430a-9fa9-88d6156d7b18_c987f2c1-4123-4d87-83bd-fe2fb221e272.jpg','2019-12-21 18:45:59','2019-12-21 18:46:00') 
+
+insert into salesman
+values(2,'test','testName','test','test','test','test','2019-12-24 18:45:59','2019-12-24 18:46:00')
+
+#状态：1代表正常 
+
+
+2代表申请请假 
+	经理查看请假人数的时候就select * from salesman where salesman_status = 2
+		
+3代表经理批准请假
+
+
+4代表申请离职
+	经理查看想要离职人数的时候就
+		select * from salesman where salesman_status = 4
+5代表经理批准离职

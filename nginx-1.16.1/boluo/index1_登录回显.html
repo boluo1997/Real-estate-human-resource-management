@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/mystyle.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/common/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/cookie.js"></script>
+    <title>唐山师范学院</title>
+
+<script type="text/javascript">
+    window.onload=
+        function(){
+            var _ticket = $.cookie("EM_TICKET");
+            if(!_ticket){
+                return ;
+            }
+            //当dataType类型为jsonp时，jQuery就会自动在请求链接上增加一个callback的参数
+            $.ajax({
+                url : "http://www.boluo.com/login/query/" + _ticket,
+                dataType : "json",
+                type : "GET",
+                success : function(data){
+                    if(data.status == 200){
+                        var _data = JSON.parse(data.data);//jackson
+                        var html =_data.userName+"，欢迎回来！<a href=\"http://www.easymall.com/user/logout\" class=\"link-logout\">[退出]</a>  \|<a href=\"http://www.easymall.com/page/manage\" class=\"link-logout\">[后台]</a>";
+                        $("#loginbar").html(html);
+                    }
+                },
+                error : function(){
+                    alert('index error.');
+                }
+            });
+        }
+    
+</script>
+
+</head>
+<body>
+
+<table id="out">
+    <tr>
+        <td colspan="6" style="height: 110px; text-align: center; padding: 0;"><img src="images/QQ截图20181213165825.png" style=" width: 980px; height: 180px; "/> </td>
+    </tr>
+    <li class="fore1" id="loginbar" clstag="homepage|keycount|home2013|01b">
+    <span id="head_span"><a href="./index.html">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="./regist.html">注册</a>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+	</li>
+    <tr>
+	    
+        <td class="menu_style"><a href="./method1.html">查看信息</a></td>
+        <td class="menu_style"><a href="./method1_1.html">修改信息</a></td>
+        <td class="menu_style"><a href="./method2.html">申请签单</a></td>
+        <td class="menu_style"><a href="./method3.html">申请病假</a></td>
+        <td class="menu_style"><a href="./method4.html">申请离职</a></td>
+        
+        <td class="menu_style"><a href="www.ghi666.club" target="_blank">国际交流</a></td>
+    </tr>
+
+
+    <tr>
+        <td colspan="6">
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="6" style="height: 210px; text-align: center; padding: 0;"><img src="images/timg.jpg" style=" width: 980px; height: 480px; "/> </td>
+    </tr>
+
+
+    <tr>
+
+        <td colspan="2">
+
+                <span class="span1">
+                    <ul>
+                        <li>党群部门</li>
+                            <ul>
+                                <li><a href="http://tw.tstc.edu.cn/" target="_blank">团委</a> </li>
+                                <li><a href="http://gh.tstc.edu.cn/" target="_blank">工会</a> </li>
+                            </ul>
+                        <li>行政部门</li>
+                            <ul>
+                                <li><a href="http://jwc.tstc.edu.cn/" target="_blank">教务处</a></li>
+                                <li><a href="http://xsc.tstc.edu.cn/" target="_blank">学生处</a></li>
+                                <li><a href="http://rsc.tstc.edu.cn/" target="_blank">人事处</a></li>
+                                <li><a href="http://cwc.tstc.edu.cn/" target="_blank">财务处</a></li>
+                            </ul>
+
+                    </ul>
+                </span>
+        </td>
+
+
+        <td colspan="2">
+                <span class="span1">
+                    <ul>
+                        <li>教学单位</li>
+                            <ul>
+                                <li><a href="http://math.tstc.edu.cn/" target="_blank">数学系</a></li>
+                                <li><a href="http://wlx.tstc.edu.cn/" target="_blank">物理系</a></li>
+                                <li><a href="http://hxx.tstc.edu.cn/" target="_blank">化学系</a></li>
+                            </ul>
+                        <li>教辅单位</li>
+                            <ul>
+                                <li><a href="http://lib.tstc.edu.cn/" target="_blank">图书馆</a></li>
+                                <li><a href="http://xdjy.tstc.edu.cn/" target="_blank">教科所</a></li>
+                                <li><a href="http://xuebao.tstc.edu.cn/" target="_blank">学报编辑处</a></li>
+                            </ul>
+                    </ul>
+                </span>
+        </td>
+
+        <td colspan="2">
+            <p style="float: left">学生教务系统登录</p>
+            <span class="span3">
+            <form id="form1" name="form1" method="post" action="" style="float: left">
+                <table id="search">
+                    <tr>
+                        <td style="width: 50%;">学号：</td>
+                        <td>
+                            <label for="textfield"></label>
+                            <!--    label
+                            带有两个输入字段和相关标记的简单 HTML 表单：
+                            <form>
+                            <label for="male">Male</label>
+                            <input type="radio" name="sex" id="male" />
+                            <br />
+                            <label for="female">Female</label>
+                            <input type="radio" name="sex" id="female" />
+                            </form>
+                            -->
+                            <input type="text" name="textfield" id="textfield"/>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>密码：</td>
+                        <td><label for="label"></label>
+                            <input type="text" name="name" id="label"/>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="http://www.baidu.com">注册</a></td>
+                        <td><a href="http://www.baidu.com">登录</a></td>
+                    </tr>
+                </table>
+            </form>
+            </span>
+        </td>
+
+
+
+
+    </tr>
+
+</table>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

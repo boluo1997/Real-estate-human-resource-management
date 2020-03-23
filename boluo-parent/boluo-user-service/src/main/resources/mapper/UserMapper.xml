@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.tedu.user.mapper.UserMapper">
+
+    <!--查看信息-->
+    <select id="selectSalesmanById" resultType="com.jt.common.pojo.Salesman">
+        select * from salesman where salesman_id = #{salesmanId};
+    </select>
+
+    <!--修改信息-->
+    <update id="alterInfo" parameterType="com.jt.common.pojo.Salesman">
+        update salesman set
+        salesman_name=#{salesmanName},
+        salesman_email=#{salesmanEmail},
+        salesman_phone=#{salesmanPhone},
+        salesman_image=#{salesmanImage}
+        where salesman_id=#{salesmanId};
+    </update>
+
+    <!--添加订单-->
+    <select id="insertOrder" parameterType="com.jt.common.pojo.MyOrder">
+        insert into myorder (
+            myorder_id,
+            myorder_salesman_id,
+            myorder_salesman_name,
+            myorder_consumer_name,
+            myorder_consumer_phone,
+            myorder_city,
+            myorder_plot_name,
+            myorder_create_time
+        )values(
+            #{myorderId},
+            #{myorderSalesmanId},
+            #{myorderSalesmanName},
+            #{myorderConsumerName},
+            #{myorderConsumerPhone},
+            #{myorderCity},
+            #{myorderPlotName},
+            #{myorderCreateTime}
+        )
+    </select>
+
+  <!--  <select id="updateUserById" resultType="com.jt.common.pojo.User">
+        update user set
+        user_status=#{userStatus}
+        where user_id=#{userId}
+    </select>
+
+
+
+
+    <select id="updateUserQuitById" resultType="com.jt.common.pojo.User">
+        update user set
+        user_status=#{userStatus}
+        where user_id=#{userId}
+    </select>
+-->
+
+
+    <update id="updateUserById">
+        update salesman set salesman_status=2;
+    </update>
+
+
+    <!--申请离职-->
+    <update id="updateUserQuitById">
+        update salesman set salesman_status=4;
+    </update>
+
+
+</mapper>

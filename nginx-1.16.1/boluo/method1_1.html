@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>修改个人信息</title>
+    <link rel="stylesheet" href="css/regist1.css"/>
+	<script type="text/javascript" src="./js/jquery-1.4.2.js"></script>
+    <script>
+	    
+		function submitForm(){
+
+			alert("信息修改成功");
+		    var salesmanId = 2;
+		    var salesmanName = $("#yourName").val();	//业务员名字
+		    var salemanEmail = $("#yourEmail").val();	//业务员邮箱
+		    var salemanPhone = $("yourPhone").val();
+		    var salemanImage = "test_image";	//住房图片
+
+		    $.ajax({
+		    	url:"http://www.boluo.com/user/alterInfo",
+		    	data:{
+			    	"salesmanId":salesmanId,
+			    	"salesmanName":salesmanName,
+			    	"salemanEmail":salemanEmail,
+			    	"salemanPhone":salemanPhone,
+			    	"salemanImage":salemanImage
+		    	},
+		    	dataType : "text",
+		    	success:function(result){
+					alert("信息修改成功");
+			    	
+		    	}
+	    	});
+	    }
+
+
+	    
+	    
+    </script>
+    
+</head>
+<body>
+	<form id="itemAddForm" class="itemForm" method="post">
+	<table>
+            <tr>
+                <td>用户名:</td>
+                <td>
+                    <input type="text" id="yourName" style="width: 280px;"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>邮箱:</td>
+                <td><input class="easyui-textbox" type="text" id="yourEmail" data-options="required:true" style="width: 280px;"></input></td>
+            </tr>
+            <tr>
+                <td>手机号:</td>
+                <td><input class="easyui-numberbox" type="text" id="yourPhone" data-options="min:1,max:99999999,precision:2,required:true" />
+                </td>
+            </tr>
+           	
+            <tr>
+                <td>住房信息描述:</td>
+                <td>
+                    <textarea style="width:800px;height:200px;" id="productDescription"></textarea>
+                </td>
+            </tr>
+
+			<tr>
+                <td>选择商品图片:</td>
+                <td>
+                    <img id="photo" src="images/shangchuanBg.png" width="109px" height="109px" style="display: block;"/>
+                </td>
+                
+            </tr>
+            <tr>
+	            <td><input  type="file" name="imgOne" class="imgOne" id="imgOne" /></td>
+            </tr>
+
+            <tr>
+	            <td><input type="button" value="提交" onclick="submitForm()"/></td>
+            </tr>
+        </table>
+		</form>
+		
+</body>

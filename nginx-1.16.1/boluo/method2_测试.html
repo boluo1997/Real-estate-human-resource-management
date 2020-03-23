@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   	
+    <title>添加订单</title>
+	<script type="text/javascript" src="./js/jquery-1.4.2.js"></script>
+</head>
+
+<body>
+	
+	<table>
+		<tr>
+			<td>业务员姓名:</td>
+			<td><input id="salesmanName" type="text" name="myorderSalesmanName" width=20px;/></td>
+		</tr>
+		<tr>
+			<td>客户姓名:</td>
+			<td><input id="consumerName" type="text" name="myorderConsumerName" width=20px;/></td>
+		</tr>
+		<tr>
+			<td>客户手机号:</td>
+			<td><input id="consumerPhone" type="text" name="myorderConsumerPhone" width=20px;/></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="提交" onclick="submitForm()"/></td>
+			<td><a href="">返回</td>
+		</tr>
+	</table>
+	
+<script>
+	
+	function submitForm(){
+
+		var tx1 = window.getElementById("tx1").value();
+		
+		var myorderSalesmanId = 1
+		var myorderSalesmanName = $("#salesmanName").val()//业务员名字
+		var myorderConsumerName = $("#consumerName").val()//客户名字
+		var myorderConsumerPhone = $("#consumerPhone").val()//客户手机号
+
+					
+
+        	$.ajax({
+		    type: "post", // 数据提交类型
+		    url: "http://www.boluo.com/user/addOrder", // 发送地址
+		    data: {
+  					"myorderSalesmanId" : myorderSalesmanId,//业务员ID
+					"myorderSalesmanName" : myorderSalesmanName,//业务员名字
+					"myorderConsumerName" : myorderConsumerName,//客户名字
+					"myorderConsumerPhone" : myorderConsumerPhone,//客户手机号
+			    }, 
+			    dataType : "text",
+//contentType: false, //
+//		    async: true, // 是否异步
+//		    processData: false, //processData 默认为false，当设置为true的时候,jquery ajax 提交的时候不会序列化 data，而是直接使用data
+		    success:function (result) {
+		        if(result.status == 100){
+			        alert("新增订单失败！"); 
+		        }else{
+			        alert("新增订单成功！");
+		        }
+		    }
+			});
+			
+       
+    }
+	
+	
+	
+</script>
+ 
+</body>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.tedu.user.mapper.UserMapper">
+ <select id="selectUserCountBysalesmanName" parameterType="String"
+         resultType="Integer">
+		select count(salesman_id) from salesman
+		where salesman_name=#{salesmanName}
+ </select>
+    <insert id="insertUser" parameterType="com.jt.common.pojo.Salesman">
+        insert into salesman (
+		salesman_name,
+		salesman_password,
+		salesman_email,
+		salesman_phone,
+		salesman_create_time
+		) values(
+		#{salesmanName},
+		#{salesmanPassword},
+		#{salesmanEmail},
+		#{salesmanPhone},
+		#{salesmanCreateTime}
+		)
+    </insert>
+    <select id="selectUserBysalesNameAndPassword"
+            parameterType="com.jt.common.pojo.Salesman"
+            resultType="com.jt.common.pojo.Salesman">
+		select * from salesman where salesman_name=#{salesmanName}
+		and salesman_password=#{salesmanPassword}
+	</select>
+</mapper>

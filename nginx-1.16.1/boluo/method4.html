@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   	
+    <title>查看个人信息</title>
+	
+</head>
+<script type="text/javascript" src="./js/jquery-1.4.2.js"></script>
+<script>
+	window.onload=function(){
+
+		var uid = 1;
+
+		$.ajax({
+               url:"http://www.boluo.com/user/applyQuit?salesmanId="+uid,
+               dataType:"json",
+               type:"POST",
+               success:function (result) {
+                    console.log(result);
+                    alert("您已经申请离职成功，请等待经理批准！");
+                    
+                
+               } 
+
+            });
+	}
+</script>
+<body>
+	
+</body>

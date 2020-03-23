@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript" src="js/common/jquery-1.11.3.min.js"></script>
+    <meta charset="UTF-8">
+   
+    <title>房地产</title>
+
+    <script>
+	    function checkInfo(){
+
+		    var cityName = $("#tx1").val();
+		    
+		    $.ajax({
+               url:"http://www.boluo.com/search/query?text="+cityName,		
+               
+               dataType:"json",
+               type:"POST",
+               success:function (result) {
+                    console.log(result);
+                    
+                    var html="";
+                    for(var i=0;i<result.length;i++){
+	                    
+		                html += "<tr>"+
+	                    "<td>"+result[i].myorderSalesmanName+"</td>"+
+						"<td>"+result[i].myorderConsumerName+"</td>"+
+						"<td>"+result[i].myorderConsumerPhone+"</td>"+
+						"<td>"+result[i].myorderCity+"</td>"+
+						"<td>"+result[i].myorderPlotName+"</td>"+
+	                    "</tr>"
+                    }
+                    
+                	
+                    $("#content").html(html);
+                    
+               } 
+
+            });
+	    }
+    </script>
+
+</head>
+<body>
+	<input id="tx1" type="text"/>
+	<input id="bt1" type="button" onclick="checkInfo()" value="搜索"/>
+
+	<table>
+		<tr>
+			<td>业务员姓名</td>
+			<td>客户姓名</td>
+			<td>客户手机号</td>
+			<td>客户所在城市</td>
+			<td>客户所在小区</td>
+			
+		</tr>
+		
+
+		<tbody id="content">
+			
+		</tbody>
+	</table>
+</body>
